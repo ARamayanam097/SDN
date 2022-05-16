@@ -1,0 +1,30 @@
+Testing
+
+Testing is mainly done by using the following commands to ensure all the switches/hosts can access each other in various situations.
+
+Commands:
+a. Pingall 
+does an all pairs ping and returns the connections
+
+b. h1 ping -c 1 h2 
+The first host ARPs for the MAC address of the second, which causes a packet_in message to go to the controller. The controller then sends a packet_out message to flood the broadcast packet to other ports on the switch.
+
+c. Sudo ovs-ofctl -O Openflow13 dump-flows s1 
+Outputs the contents of s1's flow tables
+
+d. Link s1 s2 down
+Takes down link between s1 and s2
+
+e. Link s1 s2 up
+Establishes link between s1 and s2
+
+f. Link s1 h1 down
+Triggers deviceRemoved() method and takes down link between s1 and h1
+
+g. Link s1 h1 up
+Triggers deviceMoved() method and brings up link between s1 and h1
+
+
+References:
+http://mininet.org/walkthrough/
+ 

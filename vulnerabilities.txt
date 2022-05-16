@@ -1,0 +1,12 @@
+
+Vulnerabilities:
+
+1. As mentioned in the paper cited routing on the insecure links like Man-in-the-middle attack, eavesdropping, hijacking etc are most common vulnerabilities while using the Dijkstra Algorithm. 
+
+2. In Dijkstra algorithm, each network link has a cost value to present its status, and this cost is used to calculate the shortest path. 
+
+3. In practical implementations of the Dijkstra algorithm, link costs are assigned in a simple approach due to the hardship of obtaining useful link status updates automatically and dynamically for the whole network. Hence this is a relatively inefficient way of calculating costs and there can be more reasonable ways to do so.
+
+References:
+
+J. Zhao, L. Pang, H. Li and Z. Wang, "A Safety-Enhanced Dijkstra Routing Algorithm via SDN Framework," 2020 IEEE Fifth International Conference on Data Science in Cyberspace (DSC), 2020, pp. 388-393, doi: 10.1109/DSC50466.2020.00067.
